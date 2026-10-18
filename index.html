@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>Il Regno Magico di Camilla</title>
+<meta name="description" content="Il Regno Magico di Camilla: giochi, figurine e magia con Stellina l'unicorna.">
+<meta name="theme-color" content="#ff8fc8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Regno Magico">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="sky-deco" aria-hidden="true"></div>
+
+<!-- SCHERMATA INIZIALE -->
+<section id="splash" class="screen active">
+  <div class="splash-inner">
+    <h1 class="title">
+      <span class="t1">Il Regno</span>
+      <span class="t2">Magico</span>
+      <span class="t3" id="splash-name">di Camilla</span>
+    </h1>
+    <div id="splash-uni" class="uni-splash"></div>
+    <button id="play-btn" class="play-btn" aria-label="Gioca">▶</button>
+  </div>
+</section>
+
+<!-- MAPPA DEL REGNO -->
+<section id="hub" class="screen">
+  <header class="topbar">
+    <div class="hello" id="hello">Ciao!</div>
+    <div class="counters">
+      <span class="pill">⭐ <b id="star-count">0</b></span>
+      <span class="pill">🃏 <b id="stk-count">0</b></span>
+    </div>
+    <button class="icon-btn" id="music-btn" aria-label="Musica">🎵</button>
+    <button class="icon-btn small" id="parent-btn" aria-label="Area genitori">⚙️</button>
+  </header>
+  <div class="hub-body">
+    <div class="hub-hero">
+      <div class="speech hidden" id="hub-speech"></div>
+      <div id="hub-uni" class="uni-hero"></div>
+      <button id="gift-btn" class="gift hidden" aria-label="Regalo del giorno">🎁</button>
+    </div>
+    <div class="hub-grid" id="hub-grid"></div>
+  </div>
+</section>
+
+<div id="games"></div>
+
+<div id="modal"></div>
+<canvas id="fx"></canvas>
+
+<script src="js/core.js"></script>
+<script src="js/unicorn.js"></script>
+<script src="js/fly.js"></script>
+<script src="js/bubbles.js"></script>
+<script src="js/memory.js"></script>
+<script src="js/dress.js"></script>
+<script src="js/draw.js"></script>
+<script src="js/pet.js"></script>
+<script src="js/piano.js"></script>
+<script src="js/album.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
